@@ -29,6 +29,7 @@ This is another(recommended) way of giving AWS account access to Shippable witho
 This requires four additional steps to be performed by the user
 
 #### Create a Role that Shippable will assume:
+-----
   on IAM console do following  
   **New Role** ->  
   Role Name: `shippable-role-to-allow-ecs-access` ->  
@@ -39,6 +40,7 @@ This requires four additional steps to be performed by the user
   **Create Role**  
 
 #### Add policy to role to access ECS entities:  
+-----
    select the role `shippable-role-to-allow-ecs-access`  
   **Permissions** ->  
   **Inline Policies** ->  
